@@ -2,4 +2,10 @@
     <string name="app_name">AndroidActivity</string>
     <string name="about_title">About the Application</string>
     <string name="about_text">This is my first Mobile Application. Developer: XXX </string>
+
+    <string name="registration_title">Please register here!</string>
+    <string name="regTextView_name">Name</string>
+    <string name="regTextView_email">Email</string>
+    <string name="regTextView_userid">User ID</string>
+    <string name="regTextView_password">Password</string>
 </resources>

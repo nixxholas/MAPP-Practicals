@@ -9,6 +9,8 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     String msg = "Android : ";
+    private int REGISTRATION_INTENT = 2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,11 +56,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+        Intent i; // Declare the intent first
+
         switch (v.getId()) {
             case R.id.aboutBtn: // If the aboutBtn is clicked
-                Intent i = new Intent(this, About.class);
+                i = new Intent(this, About.class);
                 startActivity(i);
                 break;
+            case R.id.registrationBtn:
+                i = new Intent(this, RegistrationActivity.class);
+                startActivityForResult(i, REGISTRATION_INTENT);
         }
 
     }
